@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8" />
+    <title>JoNotify</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+
+    <style>
+
+
+      #intro-h1 {
+        font-size: 28px !important;
+      }
+
+      /* Desktop: Side-by-Side */
+      .step-column {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 20px;
+      }
+
+      #about-how{
+        padding-top: 75px !important;
+      }
+
+      #display-2 {
+        font-size: 42px !important; 
+      }
+
+      .faq-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .faq-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 2rem;
+      color: #ffffff;
+    }
+
+    .faq-item {
+      border: 1px solid rgba(255, 255, 255, 0.218);
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      background-color: #5b4f96;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      color: #ffffff;
+      text-align: left;
+      padding: 1rem;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-question:hover {
+        background: #5b4f96 !important;
+        color: #ffffff;
+}
+
+    .faq-question:focus {
+      background: #5b4f96 !important;
+      color: #ffffff;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background-color: #ffffff;
+      color: #5b4f96;
+      padding: 0 1rem;
+    }
+
+    .faq-answer p {
+      margin: 1rem 0;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+
+    .icon {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+
+    .item-plan__price{
+            font-size: 40px !important;
+        }
+
+    @media (max-width: 600px) {
+      .faq-title {
+        font-size: 1.6rem;
+      }
+
+      .faq-question {
+        font-size: 1rem;
+      }
+    }
+
+      @media(min-width: 900px){
+       #filter-p {
+         font-size: 15px !important;
+       }
+      }
+
+      
+      @media(max-width: 500px){
+       #filter-p {
+         font-size: 15px !important;
+       }
+      }
+
+      /* Mobile: Stacked Vertical (usually below 800px or 600px) */
+      @media screen and (max-width: 900px) {
+        .step-column {
+          flex: 0 0 100% !important;
+          max-width: 100% !important;
+          padding: 0;
+        }
+      }
+      @media (max-width: 1200px) {
+        #home-content {
+          margin-bottom: 250px !important;
+        }
+
+        .process-wrap {
+          margin-top: 0px !important;
+        }
+      }
+      @media (max-width: 920px) {
+        #intro-h1 {
+          font-size: 28px !important;
+        }
+
+        #intro-h3 {
+          font-size: 18px !important;
+        }
+      }
+
+      @media (max-width: 905px) {
+        .item-plan__price{
+            font-size: 30px !important;
+        }
+
+        .features-p{
+          font-size: 15.8px !important;
+        }
+      }
+
+      @media (max-width: 450px) {
+        #intro-h1 {
+          font-size: 20px !important;
+        }
+
+        #intro-h3 {
+          font-size: 15px !important;
+        }
+      }
+      @media (max-width: 401px) {
+        #logo-title {
+          margin-top: 55px !important;
+        }
+      }
+
+       @media (max-width: 401px) {
+        .item-plan__price{
+            font-size: 25px !important;
+        }
+
+        .features-p{
+          font-size: 15.8px !important;
+        }
+      }
+
+         @media (max-width: 325px) {
+        .item-plan__price{
+            font-size: 20px !important;
+        }
+
+        .features-p{
+          font-size: 15.8px !important;
+        }
+      }
+
+        @media (max-width: 300px) {
+        .item-plan__price{
+            font-size: 18px !important;
+        }
+
+        .features-p{
+          font-size: 14px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body id="top">
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+      <div id="loader" class="dots-jump">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- header 
+    ================================================== -->
+    <header class="s-header">
+      <div class="row">
+        <div class="header-logo">
+          <a
+            class="site-logo"
+            href="index.html"
+            style="
+              display: flex !important;
+              gap: 8px !important;
+              margin-top: -50px !important;
+            "
+          >
+            <img
+              src="images/logo.png"
+              alt="Homepage"
+              style="
+                width: 50px !important;
+                height: 50px !important;
+                border-radius: 20px !important;
+                margin-top: 50px !important;
+              "
+            />
+            <h3 style="color: #ffffff !important" id="logo-title">JoNotify</h3>
+          </a>
+        </div>
+
+        <nav class="header-nav-wrap">
+          <ul class="header-main-nav">
+            <li>
+              <a class="smoothscroll" href="#about-how" title="about">About</a>
+            </li>
+            <li>
+              <a class="smoothscroll" href="#faq-section" title="about">FAQ</a>
+            </li>
+            <li>
+              <a class="smoothscroll" href="#features" title="features"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a class="smoothscroll" href="#pricing" title="pricing"
+                >Pricing</a
+              >
+            </li>
+
+          </ul>
+
+          <div class="header-cta">
+            <a
+              href="https://apkpure.com/p/com.example.second_application"
+              class="btn btn--primary header-cta__btn smoothscroll"
+              >Get The App</a
+            >
+          </div>
+        </nav>
+        <!-- end header-nav-wrap -->
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- home
+    ================================================== -->
+    <section
+      id="home"
+      class="s-home target-section"
+      data-parallax="scroll"
+      data-image-src="images/hero-bg.jpg"
+      data-natural-width="3000"
+      data-natural-height="2000"
+      data-position-y="center"
+    >
+      <div class="shadow-overlay"></div>
+
+      <div class="home-content" id="home-content">
+        <div class="row home-content__main">
+          <div class="home-content__left">
+            <h1 id="intro-h1">
+              Manage WhatsApp messages gotten from a specific person or contact in a WhatsApp Group Chat.
+            </h1>
+
+            <h3 id="intro-h3">
+              Stay updated with real-time messages gotten from your choosen
+              WhatsApp GroupChat or Contact.
+            </h3>
+
+            <div class="home-content__btn-wrap">
+              <a
+                href="https://apkpure.com/p/com.example.second_application"
+                class="btn btn--primary home-content__btn smoothscroll"
+              >
+                Get The App
+              </a>
+            </div>
+          </div>
+          <!-- end home-content__left-->
+
+          <div class="home-content__right">
+            <img
+              src="images/hero-app-screens-800.png"
+              srcset="
+                images/hero-app-screens-800.png  1x,
+                images/hero-app-screens-1600.png 2x
+              "
+            />
+          </div>
+          <!-- end home-content__right -->
+        </div>
+        <!-- end home-content__main -->
+      </div>
+      <!-- end home-content -->
+    </section>
+    <!-- end s-home -->
+
+    <!-- about
+    ================================================== -->
+
+    <!-- about-how
+    ================================================== -->
+    <section id="about-how" class="s-about-how">
+      <div class="row process-wrap">
+        <h2 class="display-2 text-center" data-aos="fade-up" id="display-2">
+          How To Use The App.
+        </h2>
+
+        <div class="process" data-aos="fade-up">
+          <div
+            class="process__steps row group"
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              text-align: center;
+            "
+          >
+            <div class="step-column">
+              <div class="col-block step" style="margin-bottom: 40px">
+                <h3 class="item-title">1. Enter a License Key</h3>
+                <p>
+                  Activate the app using a license key to unlock the features of
+                  the app.
+                </p>
+              </div>
+              <div class="col-block step" style="margin-bottom: 40px">
+                <h3 class="item-title">2. Filter Messages</h3>
+                <p id="filter-p">
+                  First time app users will receive messages from
+                  <span style="font-weight: 900">ALL</span> Group Chats(By
+                  default), users are now meant to filter messages from specific
+                  groups of their choice, by clicking on <span style="font-weight: 900">Filter Groups</span> button.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-column">
+              <div class="col-block step" style="margin-bottom: 40px">
+                <h3 class="item-title">3. Edit/Delete Groups</h3>
+                <p>
+                  Users can Edit/Delete selected groups at any time by clicking on
+                  the <span style="font-weight: 900">Filter Groups</span> button.
+                </p>
+              </div>
+              <div class="col-block step" style="margin-bottom: 40px">
+                <h3 class="item-title">4. Clear Messages</h3>
+                <p>
+                  You can clear current messages in the app, but it won't affect your <span style="font-weight: 900">Filtered Groups</span>, so don't worry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end process -->
+      </div>
+      <!-- end about-how -->
+    </section>
+    <!-- end s-about-how -->
+
+    <!-- FAQ Section -->
+     <section class="faq-container" id="faq-section">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What is the use of this App?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          JoNotify saves you the stress of having to go through bulky whatsapp group chat messages, you can just single out a specific group and a specific sender you want to be receiving messages from.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What are the requirements for this app?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          - DnD(Do not Disturb) mode must be turned off on your phone. <br />
+          - The App requires Internet Connection to work properly. <br />
+          - The App requires WhatsApp to be installed on the device. <br />
+          - The whatsapp group must NOT be muted or archived or the app wont work properly. <br />
+          - If your phone switches off, the app won't retrieve any messages, and any messages sent during the period your phone was off will not be retrieved. <br />
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is the app available for everyone?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Unfortunately, the app is only available for Android Phone users.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- end FAQ Section -->
+    <!-- features
+    ================================================== -->
+    <section id="features" class="s-features target-section">
+      <div class="row section-header has-bottom-sep" data-aos="fade-up">
+        <div class="col-full">
+          <h1 class="display-1" style="font-size: 42px !important;">
+            Features The App Offers.
+          </h1>
+        </div>
+      </div>
+      <!-- end section-header -->
+
+      <div class="row features block-1-3 block-m-1-2">
+        <div class="col-block item-feature" data-aos="fade-up">
+          <div class="item-feature__icon">
+            <i class="icon-upload"></i>
+          </div>
+          <div class="item-feature__text">
+            <h3 class="item-title">Cloud Based</h3>
+            <p>
+              Every <span style="font-weight: 900;">License Key</span> is generated and stored in a well secured and trusted database server.
+         Each License Key is valid for <span style="font-weight: 900;">one-time use only</span>.
+           </p>
+          </div>
+        </div>
+
+        <div class="col-block item-feature" data-aos="fade-up">
+          <div class="item-feature__icon">
+            <i class="icon-shield"></i>
+          </div>
+          <div class="item-feature__text">
+            <h3 class="item-title">Secured Privacy</h3>
+            <p>
+              <span style="font-weight: 900;">JoNotify</span> ensures that your data and messages are kept private, the app does not share private informations to any third-party services.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-block item-feature" data-aos="fade-up">
+          <div class="item-feature__icon">
+            <i class="icon-chat"></i>
+          </div>
+          <div class="item-feature__text">
+            <h3 class="item-title">Filter Messages</h3>
+            <p>
+              <span style="font-weight: 900;">JoNotify</span> allows you to only get messages gotten from a <span style="font-weight: 900;">specified  person or contact</span> in a WhatsApp Group Chat.
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="col-block item-feature" data-aos="fade-up">
+          <div class="item-feature__icon">
+            <i class="icon-wallet"></i>
+          </div>
+          <div class="item-feature__text">
+            <h3 class="item-title">Payments</h3>
+            <p>
+              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
+              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
+              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
+              voluptas ipsa in tempora esse soluta sint.
+            </p>
+          </div>
+        </div> -->
+      </div>
+      <!-- end features -->
+
+     
+      <!-- end testimonials-wrap -->
+    </section>
+    <!-- end s-features -->
+
+    <!-- pricing
+    ================================================== -->
+    <section id="pricing" class="s-pricing target-section">
+      <div class="row section-header align-center" data-aos="fade-up">
+        <div class="col-full">
+          <h1 class="display-1" style="font-size: 40px !important;">
+          Prices and Plans That Suit You.
+          </h1>
+          <p class="lead">
+            Choose a License Key plan that works best for you and start using the app
+            today.
+          </p>
+        </div>
+      </div>
+      <!-- end section-header -->
+
+      <div class="row plans block-1-2 block-m-1-2 block-tab-full stack">
+        <div class="col-block item-plan" data-aos="fade-up" style="border: #5b4f96 3px solid; border-radius: 7px !important; height: 600px !important;">
+          <div class="item-plan__block" style="height: 100% !important;">
+            <div class="item-plan__top-part" style="display: grid !important; margin-top: -30px !important;">
+              <h3 class="item-plan__title">Starter</h3>
+              <p class="item-plan__price">$3.5</p>
+              <p class="item-plan__price">€3.0</p>
+              <p class="item-plan__price">₦5,000</p>
+
+              <p class="item-plan__per"></p>
+            </div>
+
+            <div class="item-plan__bottom-part" style="height: 380px !important; margin-top: 5px !important;">
+              <div class="item-plan__features" style="display: grid !important;">
+                <p class="features-p"><span style="color: red;">X</span> 8h Cool Down(Checks for new messages at an interval of 8 hours)</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: red;">X</span> 1h Up Time(Checks and display messages for 1 hour)</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> Other functionalities work</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of groups and contacts you can add</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of messages the app can have</p>
+              </div>
+<!-- 
+              <a class="btn btn--primary large full-width" href="#0"
+                >Get Started</a
+              > -->
+            </div>
+          </div>
+        </div>
+        <!-- end item-plan -->
+
+        <div class="col-block item-plan" data-aos="fade-up" style="background: #5b4f96c5; border-radius: 7px !important; height: 600px !important; color: #ffffff !important;">
+          <div class="item-plan__block" style="height: 100% !important; color: #ffffff !important; background: #5b4f9600 !important;">
+            <div class="item-plan__top-part" style="display: grid !important; margin-top: -30px !important; color: #ffffff !important;">
+              <h3 class="item-plan__title" style="color: #ffffff;">Basic (Recommended)</h3>
+              <p class="item-plan__price" style="color: #ffffff;">$6.9</p>
+              <p class="item-plan__price" style="color: #ffffff;">€5.8</p>
+              <p class="item-plan__price" style="color: #ffffff;">₦10,000</p>
+
+              <p class="item-plan__per"></p>
+            </div>
+
+            <div class="item-plan__bottom-part" style="height: 380px !important; margin-top: 5px !important;">
+              <div class="item-plan__features" style="display: grid !important;">
+                <p class="features-p"><span style="color: red;">X</span> 4h Cool Down(Checks for new messages at an interval of 4 hours)</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: red;">X</span> 1h Up Time(Checks and display messages for 1 hour)</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> Other functionalities work</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of groups and contacts you can add</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of messages the app can have</p>
+              </div>
+<!-- 
+              <a class="btn btn--primary large full-width" href="#0"
+                >Get Started</a
+              > -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-block item-plan" data-aos="fade-up" style="border: #5b4f96 3px solid; border-radius: 7px !important; height: 600px !important;">
+          <div class="item-plan__block" style="height: 100% !important;">
+            <div class="item-plan__top-part" style="display: grid !important; margin-top: -30px !important;">
+              <h3 class="item-plan__title">Pro</h3>
+              <p class="item-plan__price">$10.31</p>
+              <p class="item-plan__price">€8.74</p>
+              <p class="item-plan__price">₦15,000</p>
+
+              <p class="item-plan__per"></p>
+            </div>
+
+            <div class="item-plan__bottom-part" style="height: 380px !important; margin-top: 5px !important;">
+              <div class="item-plan__features" style="display: grid !important;">
+                <p class="features-p"><span style="color: red;">X</span> 2h Cool Down(Checks for new messages at an interval of 2 hours)</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: red;">X</span> 1h Up Time(Checks and display messages for 1 hour)</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> Other functionalities work</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of groups and contacts you can add</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of messages the app can have</p>
+              </div>
+<!-- 
+              <a class="btn btn--primary large full-width" href="#0"
+                >Get Started</a
+              > -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-block item-plan" data-aos="fade-up" style="border: #5b4f96 3px solid; border-radius: 7px !important; height: 600px !important;">
+          <div class="item-plan__block" style="height: 100% !important;">
+            <div class="item-plan__top-part" style="display: grid !important; margin-top: -30px !important;">
+              <h3 class="item-plan__title">Premium</h3>
+              <p class="item-plan__price">$13.80</p>
+              <p class="item-plan__price">€11.70</p>
+              <p class="item-plan__price">₦20,000</p>
+
+              <p class="item-plan__per"></p>
+            </div>
+
+            <div class="item-plan__bottom-part" style="height: 380px !important; margin-top: 5px !important;">
+              <div class="item-plan__features" style="display: grid !important;">
+                <p class="features-p"><span style="color: green;">✔</span> No Cool Down</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> Always Up</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> Other functionalities work</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of groups and contacts you can add</p>
+                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of messages the app can have</p>
+              </div>
+<!-- 
+              <a class="btn btn--primary large full-width" href="#0"
+                >Get Started</a
+              > -->
+            </div>
+          </div>
+        </div>
+        <!-- end item-plan -->
+      </div>
+      <!-- end plans -->
+    </section>
+    <!-- end s-pricing -->
+
+    <!-- download
+    ================================================== -->
+
+    <!-- end s-download -->
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer footer">
+      <div class="row section-header align-center">
+        <div class="col-full">
+          <h1 class="display-1">Start Using The App Today</h1>
+          <p class="lead">
+           And let JoNotify help you manage WhatsApp GroupChat messages.
+          </p>
+          <a
+                href="https://apkpure.com/p/com.example.second_application"
+                class="btn btn--primary home-content__btn smoothscroll"
+              >
+                Get The App
+              </a>
+        </div>
+      </div>
+      <!-- end section-header -->
+
+      
+      <!-- end footer__top -->
+
+      <div class="row footer__bottom">
+        <!-- <div class="footer__about col-five tab-full left">
+          <h4>About Kairos.</h4>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex consectetur adipisicing elit do eiusmod tempor.
+          </p>
+
+          <ul class="footer__social">
+            <li>
+              <a href="#0"
+                ><i class="fab fa-facebook-f" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#0"
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div> -->
+
+        <!-- <div class="col-five md-seven tab-full right end">
+          <div class="row">
+            <div class="footer__site-links col-five mob-full">
+              <h4>Site links.</h4>
+
+              <ul class="footer__site-links">
+                <li><a href="#home" class="smoothscroll">Intro</a></li>
+                <li><a href="#about" class="smoothscroll">About</a></li>
+                <li><a href="#features" class="smoothscroll">Features</a></li>
+                <li><a href="#pricing" class="smoothscroll">Pricing</a></li>
+                <li><a href="#download" class="smoothscroll">Download</a></li>
+                <li><a href="#0">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__contact col-seven mob-full">
+              <h4>Contact Us.</h4>
+
+              <p>
+                Phone: (+63) 555 1212 <br />
+                Fax: (+63) 555 0100
+              </p>
+              <p>
+                Need help or have a question? Contact us at: <br />
+                <a href="mailto:#0" class="footer__mail-link"
+                  >support@kairos.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="col-full ss-copyright">
+          <span>&copy; Copyright JoNotify 2025</span>
+        </div>
+      </div>
+      <!-- end footer__bottom -->
+
+      <div class="go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top"></a>
+      </div>
+    </footer>
+    <!-- end s-footer -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      const question = item.querySelector(".faq-question");
+      const icon = question.querySelector(".icon");
+
+      question.addEventListener("click", () => {
+        const isActive = item.classList.contains("active");
+
+        faqItems.forEach(i => {
+          i.classList.remove("active");
+          i.querySelector(".icon").textContent = "+";
+        });
+
+        if (!isActive) {
+          item.classList.add("active");
+          icon.textContent = "−";
+        }
+      });
+    });
+  </script>
+
+  </body>
+</html>
