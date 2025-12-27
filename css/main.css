@@ -1,4 +1,7 @@
 @charset "UTF-8";
+*{
+  box-sizing: border-box !important;
+}
 
 /* =================================================================== 
  *
@@ -2779,9 +2782,9 @@ html.no-csstransitions .home-content__main {
 .video-bg {
   z-index: 1;
   overflow: hidden;
-  height: 62.4rem;
+  height: 42.4rem;
   margin-top: calc((62.4rem/2) * -1);
-  background-image: url(../images/video-bg-2400.jpg);
+  background-image: url(../images/tutorial.jpeg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -2803,6 +2806,10 @@ html.no-csstransitions .home-content__main {
  * ## video button
  * ------------------------------------------------------------------- */
 .btn-video {
+  
+}
+
+.btn-video-2{
   display: inline-block;
   text-align: center;
   outline: none;
@@ -2813,17 +2820,49 @@ html.no-csstransitions .home-content__main {
 
 .video-icon {
   display: inline-block;
-  height: 112px;
-  width: 112px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  background-color: #ffffff;
-  background-image: url(../images/icons/icon-play-black.svg);
+  background-color: #5b4f96;
+  background-image: url(../images/icons/icon-play.svg);
+  color: #ffffff !important;
   background-repeat: no-repeat;
   background-position: 55% center;
   background-size: 24px 27px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  margin-top: -40px !important;
 }
+
+.video-icon-2{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #5b4f96;
+  background-image: url(../images/icons/icon-play.svg);
+  color: #ffffff !important;
+  background-repeat: no-repeat;
+  background-position: 55% center;
+  background-size: 24px 27px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin-top: -40px !important;
+}
+
+.vid_tutorial_p{
+  color: #5b4f96 !important;
+  margin-top: -25px !important;
+  font-size: 18px !important;
+}
+
+.vid_tutorial_p_2{
+  color: #5b4f96 !important;
+  margin-top: -25px !important;
+  font-size: 18px !important;
+}
+
+
 
 .btn-video:hover .video-icon {
   background-color: #5b4f96;
@@ -3089,11 +3128,7 @@ html.no-csstransitions .home-content__main {
     margin-top: calc((60rem/2) * -1);
   }
 
-  .video-icon {
-    height: 96px;
-    width: 96px;
-    background-size: 20px 22px;
-  }
+
 
 }
 
@@ -3123,10 +3158,7 @@ html.no-csstransitions .home-content__main {
     margin-top: calc((48rem/2) * -1);
   }
 
-  .video-icon {
-    height: 80px;
-    width: 80px;
-  }
+
 
   .process {
     text-align: center;

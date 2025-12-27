@@ -29,8 +29,6 @@
     <link rel="icon" href="images/logo.png" type="image/x-icon" />
 
     <style>
-
-
       #intro-h1 {
         font-size: 28px !important;
       }
@@ -42,105 +40,195 @@
         padding: 0 20px;
       }
 
-      #about-how{
+      #about-how {
         padding-top: 75px !important;
       }
 
       #display-2 {
-        font-size: 42px !important; 
+        font-size: 42px !important;
       }
 
       .faq-container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-    }
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
 
-    .faq-title {
-      text-align: center;
-      font-size: 30px;
-      margin-bottom: 2rem;
-      color: #ffffff;
-    }
-
-    .faq-item {
-      border: 1px solid rgba(255, 255, 255, 0.218);
-      border-radius: 6px;
-      margin-bottom: 1rem;
-      overflow: hidden;
-      background-color: #5b4f96;
-    }
-
-    .faq-question {
-      width: 100%;
-      background: none;
-      border: none;
-      color: #ffffff;
-      text-align: left;
-      padding: 1rem;
-      font-size: 1.1rem;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .faq-question:hover {
-        background: #5b4f96 !important;
-        color: #ffffff;
-}
-
-    .faq-question:focus {
-      background: #5b4f96 !important;
-      color: #ffffff;
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-      background-color: #ffffff;
-      color: #5b4f96;
-      padding: 0 1rem;
-    }
-
-    .faq-answer p {
-      margin: 1rem 0;
-    }
-
-    .faq-item.active .faq-answer {
-      max-height: 300px;
-    }
-
-    .icon {
-      font-size: 1.5rem;
-      margin-left: 1rem;
-    }
-
-    .item-plan__price{
-            font-size: 40px !important;
-        }
-
-    @media (max-width: 600px) {
       .faq-title {
-        font-size: 1.6rem;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 2rem;
+        color: #ffffff;
+      }
+
+      .faq-item {
+        border: 1px solid rgba(255, 255, 255, 0.218);
+        border-radius: 6px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        background-color: #5b4f96;
       }
 
       .faq-question {
-        font-size: 1rem;
+        width: 100%;
+        background: none;
+        border: none;
+        color: #ffffff;
+        text-align: left;
+        padding: 1rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
-    }
 
-      @media(min-width: 900px){
-       #filter-p {
-         font-size: 15px !important;
-       }
+       .faq-question-2{
+        width: 100%;
+        background: none;
+        border: none;
+        color: #ffffff;
+        text-align: left;
+        padding: 1rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
 
-      
-      @media(max-width: 500px){
-       #filter-p {
-         font-size: 15px !important;
-       }
+      .faq-question:hover {
+        background: #5b4f96 !important;
+        color: #ffffff;
+      }
+
+       .faq-question-2:hover {
+        background: #5b4f96 !important;
+        color: #ffffff;
+      }
+
+      .faq-question:focus {
+        background: #5b4f96 !important;
+        color: #ffffff;
+      }
+
+      .faq-question-2:focus {
+        background: #5b4f96 !important;
+        color: #ffffff;
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background-color: #ffffff;
+        color: #5b4f96;
+        padding: 0 1rem;
+      }
+
+      .faq-answer p {
+        margin: 1rem 0;
+      }
+
+      .faq-item.active .faq-answer {
+        max-height: 900px;
+      }
+
+      #vid_tutorial_h1 {
+        text-align: center !important;
+        color: black !important;
+      }
+
+      .play_btns{
+        display: flex !important;
+        justify-content: center !important;
+        gap: 50px !important;
+        padding-top: 100px !important;
+        height: 200px !important;
+      }
+
+      @media (max-width: 610px) {
+        .play_btns{
+          flex-direction: column !important;
+          justify-content: center !important;
+          align-items: center !important;
+          padding-top: 50px !important;
+        }
+
+        .play_btn_2{
+          margin-left: -50px !important;
+        }
+      }
+
+       @media (max-width: 380px) {
+
+        .video-icon{
+          width: 40px !important;
+          height: 40px !important;
+          background-size: 14px 17px;
+
+        }
+
+        .video-icon-2{
+          width: 40px !important;
+          height: 40px !important;
+          background-size: 14px 17px;
+        }
+        
+         .vid_tutorial_p{
+          font-size: 16px !important;
+          margin-top: -30px !important;
+        }
+
+        .vid_tutorial_p_2 {
+          font-size: 16px !important;
+          margin-top: -30px !important;
+        }
+      }
+
+      .play_btn_1 {
+        display: flex !important;
+        gap: 10px !important;
+        color: #5b4f96 !important;
+        outline: none;
+      }
+
+      .play_btn_2{
+        display: flex !important;
+        gap: 10px !important;
+        color: #5b4f96 !important;
+        outline: none;
+      }
+
+            .icon {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+      }
+
+      .item-plan__price {
+        font-size: 40px !important;
+      }
+
+      @media (max-width: 600px) {
+        .faq-title {
+          font-size: 1.6rem;
+        }
+
+        .faq-question {
+          font-size: 1rem;
+        }
+      }
+
+      @media (min-width: 900px) {
+        #filter-p {
+          font-size: 15px !important;
+        }
+      }
+
+      @media (max-width: 500px) {
+        #filter-p {
+          font-size: 15px !important;
+        }
       }
 
       /* Mobile: Stacked Vertical (usually below 800px or 600px) */
@@ -171,12 +259,18 @@
       }
 
       @media (max-width: 905px) {
-        .item-plan__price{
-            font-size: 30px !important;
+        .item-plan__price {
+          font-size: 30px !important;
         }
 
-        .features-p{
+        .features-p {
           font-size: 15.8px !important;
+        }
+      }
+
+       @media (max-width: 475px) {
+        .faq-question-2{
+          font-size: 8px !important;
         }
       }
 
@@ -188,39 +282,54 @@
         #intro-h3 {
           font-size: 15px !important;
         }
+
       }
       @media (max-width: 401px) {
         #logo-title {
           margin-top: 55px !important;
         }
+
+         .faq-question-2{
+          font-size: 7px !important;
+        }
       }
 
-       @media (max-width: 401px) {
-        .item-plan__price{
-            font-size: 25px !important;
+      @media (max-width: 401px) {
+        .item-plan__price {
+          font-size: 25px !important;
         }
 
-        .features-p{
+        .features-p {
           font-size: 15.8px !important;
         }
       }
 
-         @media (max-width: 325px) {
-        .item-plan__price{
-            font-size: 20px !important;
+      @media (max-width: 365px) {
+        #logo-title {
+          margin-top: 55px !important;
         }
 
-        .features-p{
+         .faq-question-2{
+          font-size: 6px !important;
+        }
+      }
+
+      @media (max-width: 325px) {
+        .item-plan__price {
+          font-size: 20px !important;
+        }
+
+        .features-p {
           font-size: 15.8px !important;
         }
       }
 
-        @media (max-width: 300px) {
-        .item-plan__price{
-            font-size: 18px !important;
+      @media (max-width: 300px) {
+        .item-plan__price {
+          font-size: 18px !important;
         }
 
-        .features-p{
+        .features-p {
           font-size: 14px !important;
         }
       }
@@ -284,7 +393,6 @@
                 >Pricing</a
               >
             </li>
-
           </ul>
 
           <div class="header-cta">
@@ -319,7 +427,8 @@
         <div class="row home-content__main">
           <div class="home-content__left">
             <h1 id="intro-h1">
-              Manage WhatsApp messages gotten from a specific person or contact in a WhatsApp Group Chat.
+              Manage WhatsApp messages gotten from a specific person or contact
+              in a WhatsApp Group Chat.
             </h1>
 
             <h3 id="intro-h3">
@@ -390,7 +499,8 @@
                   First time app users will receive messages from
                   <span style="font-weight: 900">ALL</span> Group Chats(By
                   default), users are now meant to filter messages from specific
-                  groups of their choice, by clicking on <span style="font-weight: 900">Filter Groups</span> button.
+                  groups of their choice, by clicking on
+                  <span style="font-weight: 900">Filter Groups</span> button.
                 </p>
               </div>
             </div>
@@ -399,14 +509,17 @@
               <div class="col-block step" style="margin-bottom: 40px">
                 <h3 class="item-title">3. Edit/Delete Groups</h3>
                 <p>
-                  Users can Edit/Delete selected groups at any time by clicking on
-                  the <span style="font-weight: 900">Filter Groups</span> button.
+                  Users can Edit/Delete selected groups at any time by clicking
+                  on the
+                  <span style="font-weight: 900">Filter Groups</span> button.
                 </p>
               </div>
               <div class="col-block step" style="margin-bottom: 40px">
                 <h3 class="item-title">4. Clear Messages</h3>
                 <p>
-                  You can clear current messages in the app, but it won't affect your <span style="font-weight: 900">Filtered Groups</span>, so don't worry.
+                  You can clear current messages in the app, but it won't affect
+                  your <span style="font-weight: 900">Filtered Groups</span>, so
+                  don't worry.
                 </p>
               </div>
             </div>
@@ -419,58 +532,62 @@
     <!-- end s-about-how -->
 
     <!-- FAQ Section -->
-     <section class="faq-container" id="faq-section">
-    <h2 class="faq-title">Frequently Asked Questions</h2>
+    <section class="faq-container" id="faq-section">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
 
-    <div class="faq-item">
-      <button class="faq-question">
-        What is the use of this App?
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p>
-          JoNotify saves you the stress of having to go through bulky whatsapp group chat messages, you can just single out a specific group and a specific sender you want to be receiving messages from.
-        </p>
+      <div class="faq-item">
+        <button class="faq-question">
+          What is the use of this App?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            JoNotify saves you the stress of having to go through bulky whatsapp
+            group chat messages, you can just single out a specific group and a
+            specific sender you want to be receiving messages from.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="faq-item">
-      <button class="faq-question">
-        What are the requirements for this app?
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p>
-          - DnD(Do not Disturb) mode must be turned off on your phone. <br />
-          - The App requires Internet Connection to work properly. <br />
-          - The App requires WhatsApp to be installed on the device. <br />
-          - The whatsapp group must NOT be muted or archived or the app wont work properly. <br />
-          - If your phone switches off, the app won't retrieve any messages, and any messages sent during the period your phone was off will not be retrieved. <br />
-        </p>
+      <div class="faq-item">
+        <button class="faq-question-2">
+          What are the requirements for this app?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            - DnD(Do not Disturb) mode must be turned off on your phone. <br />
+            - The App requires Internet Connection to work properly. <br />
+            - The App requires WhatsApp to be installed on the device. <br />
+            - The whatsapp group must NOT be muted or archived or the app wont
+            work properly. <br />
+            - If your phone switches off, the app won't retrieve any messages,
+            and any messages sent during the period your phone was off will not
+            be retrieved. <br />
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="faq-item">
-      <button class="faq-question">
-        Is the app available for everyone?
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer">
-        <p>
-          Unfortunately, the app is only available for Android Phone users.
-        </p>
+      <div class="faq-item">
+        <button class="faq-question-2">
+          Is the app available for all devices?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Unfortunately, the app is only available for Android devices.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-<!-- end FAQ Section -->
+    <!-- end FAQ Section -->
     <!-- features
     ================================================== -->
     <section id="features" class="s-features target-section">
       <div class="row section-header has-bottom-sep" data-aos="fade-up">
         <div class="col-full">
-          <h1 class="display-1" style="font-size: 42px !important;">
+          <h1 class="display-1" style="font-size: 42px !important">
             Features The App Offers.
           </h1>
         </div>
@@ -485,9 +602,11 @@
           <div class="item-feature__text">
             <h3 class="item-title">Cloud Based</h3>
             <p>
-              Every <span style="font-weight: 900;">License Key</span> is generated and stored in a well secured and trusted database server.
-         Each License Key is valid for <span style="font-weight: 900;">one-time use only</span>.
-           </p>
+              Every <span style="font-weight: 900">License Key</span> is
+              generated and stored in a well secured and trusted database
+              server. Each License Key is valid for
+              <span style="font-weight: 900">one-time use only</span>.
+            </p>
           </div>
         </div>
 
@@ -498,7 +617,9 @@
           <div class="item-feature__text">
             <h3 class="item-title">Secured Privacy</h3>
             <p>
-              <span style="font-weight: 900;">JoNotify</span> ensures that your data and messages are kept private, the app does not share private informations to any third-party services.
+              <span style="font-weight: 900">JoNotify</span> ensures that your
+              data and messages are kept private, the app does not share private
+              informations to any third-party services.
             </p>
           </div>
         </div>
@@ -510,7 +631,10 @@
           <div class="item-feature__text">
             <h3 class="item-title">Filter Messages</h3>
             <p>
-              <span style="font-weight: 900;">JoNotify</span> allows you to only get messages gotten from a <span style="font-weight: 900;">specified  person or contact</span> in a WhatsApp Group Chat.
+              <span style="font-weight: 900">JoNotify</span> allows you to only
+              get messages gotten from a
+              <span style="font-weight: 900">specified person or contact</span>
+              in a WhatsApp Group Chat.
             </p>
           </div>
         </div>
@@ -532,31 +656,64 @@
       </div>
       <!-- end features -->
 
-     
       <!-- end testimonials-wrap -->
+      <h1 id="vid_tutorial_h1">Video Tutorials</h1>
     </section>
     <!-- end s-features -->
 
+    <div class="play_btns">
+
+    <a
+      href="https://vimeo.com/1149646854?share=copy&fl=sv&fe=ci"
+      data-lity
+      class="play_btn_1"
+    >
+      <span class="video-icon"></span>
+      <p class="vid_tutorial_p">How to download the app</p>
+    </a>
+
+    <a
+      href="https://vimeo.com/1149650041?fl=pl&fe=sh"
+      data-lity
+
+      class="play_btn_2"
+    >
+      <span class="video-icon-2"></span>
+      <p class="vid_tutorial_p_2">How to use the app</p>
+    </a>
+    <!-- end video-bg -->
+    </div>
     <!-- pricing
     ================================================== -->
     <section id="pricing" class="s-pricing target-section">
       <div class="row section-header align-center" data-aos="fade-up">
         <div class="col-full">
-          <h1 class="display-1" style="font-size: 40px !important;">
-          Prices and Plans That Suit You.
+          <h1 class="display-1" style="font-size: 40px !important">
+            Prices and Plans That Suit You.
           </h1>
           <p class="lead">
-            Choose a License Key plan that works best for you and start using the app
-            today.
+            Choose a License Key plan that works best for you and start using
+            the app today.
           </p>
         </div>
       </div>
       <!-- end section-header -->
 
       <div class="row plans block-1-2 block-m-1-2 block-tab-full stack">
-        <div class="col-block item-plan" data-aos="fade-up" style="border: #5b4f96 3px solid; border-radius: 7px !important; height: 600px !important;">
-          <div class="item-plan__block" style="height: 100% !important;">
-            <div class="item-plan__top-part" style="display: grid !important; margin-top: -30px !important;">
+        <div
+          class="col-block item-plan"
+          data-aos="fade-up"
+          style="
+            border: #5b4f96 3px solid;
+            border-radius: 7px !important;
+            height: 600px !important;
+          "
+        >
+          <div class="item-plan__block" style="height: 100% !important">
+            <div
+              class="item-plan__top-part"
+              style="display: grid !important; margin-top: -30px !important"
+            >
               <h3 class="item-plan__title">Starter</h3>
               <p class="item-plan__price">$3.5</p>
               <p class="item-plan__price">€3.0</p>
@@ -565,15 +722,32 @@
               <p class="item-plan__per"></p>
             </div>
 
-            <div class="item-plan__bottom-part" style="height: 380px !important; margin-top: 5px !important;">
-              <div class="item-plan__features" style="display: grid !important;">
-                <p class="features-p"><span style="color: red;">X</span> 8h Cool Down(Checks for new messages at an interval of 8 hours)</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: red;">X</span> 1h Up Time(Checks and display messages for 1 hour)</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> Other functionalities work</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of groups and contacts you can add</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of messages the app can have</p>
+            <div
+              class="item-plan__bottom-part"
+              style="height: 380px !important; margin-top: 5px !important"
+            >
+              <div class="item-plan__features" style="display: grid !important">
+                <p class="features-p">
+                  <span style="color: red">X</span> 8h Cool Down(Checks for new
+                  messages at an interval of 8 hours)
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: red">X</span> 1h Up Time(Checks and
+                  display messages for 1 hour)
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> Other functionalities work
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> No limits to the number of
+                  groups and contacts you can add
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> No limits to the number of
+                  messages the app can have
+                </p>
               </div>
-<!-- 
+              <!-- 
               <a class="btn btn--primary large full-width" href="#0"
                 >Get Started</a
               > -->
@@ -582,26 +756,68 @@
         </div>
         <!-- end item-plan -->
 
-        <div class="col-block item-plan" data-aos="fade-up" style="background: #5b4f96c5; border-radius: 7px !important; height: 600px !important; color: #ffffff !important;">
-          <div class="item-plan__block" style="height: 100% !important; color: #ffffff !important; background: #5b4f9600 !important;">
-            <div class="item-plan__top-part" style="display: grid !important; margin-top: -30px !important; color: #ffffff !important;">
-              <h3 class="item-plan__title" style="color: #ffffff;">Basic (Recommended)</h3>
-              <p class="item-plan__price" style="color: #ffffff;">$6.9</p>
-              <p class="item-plan__price" style="color: #ffffff;">€5.8</p>
-              <p class="item-plan__price" style="color: #ffffff;">₦10,000</p>
+        <div
+          class="col-block item-plan"
+          data-aos="fade-up"
+          style="
+            background: #5b4f96c5;
+            border-radius: 7px !important;
+            height: 600px !important;
+            color: #ffffff !important;
+          "
+        >
+          <div
+            class="item-plan__block"
+            style="
+              height: 100% !important;
+              color: #ffffff !important;
+              background: #5b4f9600 !important;
+            "
+          >
+            <div
+              class="item-plan__top-part"
+              style="
+                display: grid !important;
+                margin-top: -30px !important;
+                color: #ffffff !important;
+              "
+            >
+              <h3 class="item-plan__title" style="color: #ffffff">
+                Basic (Recommended)
+              </h3>
+              <p class="item-plan__price" style="color: #ffffff">$6.9</p>
+              <p class="item-plan__price" style="color: #ffffff">€5.8</p>
+              <p class="item-plan__price" style="color: #ffffff">₦10,000</p>
 
               <p class="item-plan__per"></p>
             </div>
 
-            <div class="item-plan__bottom-part" style="height: 380px !important; margin-top: 5px !important;">
-              <div class="item-plan__features" style="display: grid !important;">
-                <p class="features-p"><span style="color: red;">X</span> 4h Cool Down(Checks for new messages at an interval of 4 hours)</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: red;">X</span> 1h Up Time(Checks and display messages for 1 hour)</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> Other functionalities work</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of groups and contacts you can add</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of messages the app can have</p>
+            <div
+              class="item-plan__bottom-part"
+              style="height: 380px !important; margin-top: 5px !important"
+            >
+              <div class="item-plan__features" style="display: grid !important">
+                <p class="features-p">
+                  <span style="color: red">X</span> 4h Cool Down(Checks for new
+                  messages at an interval of 4 hours)
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: red">X</span> 1h Up Time(Checks and
+                  display messages for 1 hour)
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> Other functionalities work
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> No limits to the number of
+                  groups and contacts you can add
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> No limits to the number of
+                  messages the app can have
+                </p>
               </div>
-<!-- 
+              <!-- 
               <a class="btn btn--primary large full-width" href="#0"
                 >Get Started</a
               > -->
@@ -609,9 +825,20 @@
           </div>
         </div>
 
-        <div class="col-block item-plan" data-aos="fade-up" style="border: #5b4f96 3px solid; border-radius: 7px !important; height: 600px !important;">
-          <div class="item-plan__block" style="height: 100% !important;">
-            <div class="item-plan__top-part" style="display: grid !important; margin-top: -30px !important;">
+        <div
+          class="col-block item-plan"
+          data-aos="fade-up"
+          style="
+            border: #5b4f96 3px solid;
+            border-radius: 7px !important;
+            height: 600px !important;
+          "
+        >
+          <div class="item-plan__block" style="height: 100% !important">
+            <div
+              class="item-plan__top-part"
+              style="display: grid !important; margin-top: -30px !important"
+            >
               <h3 class="item-plan__title">Pro</h3>
               <p class="item-plan__price">$10.31</p>
               <p class="item-plan__price">€8.74</p>
@@ -620,15 +847,32 @@
               <p class="item-plan__per"></p>
             </div>
 
-            <div class="item-plan__bottom-part" style="height: 380px !important; margin-top: 5px !important;">
-              <div class="item-plan__features" style="display: grid !important;">
-                <p class="features-p"><span style="color: red;">X</span> 2h Cool Down(Checks for new messages at an interval of 2 hours)</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: red;">X</span> 1h Up Time(Checks and display messages for 1 hour)</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> Other functionalities work</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of groups and contacts you can add</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of messages the app can have</p>
+            <div
+              class="item-plan__bottom-part"
+              style="height: 380px !important; margin-top: 5px !important"
+            >
+              <div class="item-plan__features" style="display: grid !important">
+                <p class="features-p">
+                  <span style="color: red">X</span> 2h Cool Down(Checks for new
+                  messages at an interval of 2 hours)
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: red">X</span> 1h Up Time(Checks and
+                  display messages for 1 hour)
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> Other functionalities work
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> No limits to the number of
+                  groups and contacts you can add
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> No limits to the number of
+                  messages the app can have
+                </p>
               </div>
-<!-- 
+              <!-- 
               <a class="btn btn--primary large full-width" href="#0"
                 >Get Started</a
               > -->
@@ -636,9 +880,20 @@
           </div>
         </div>
 
-        <div class="col-block item-plan" data-aos="fade-up" style="border: #5b4f96 3px solid; border-radius: 7px !important; height: 600px !important;">
-          <div class="item-plan__block" style="height: 100% !important;">
-            <div class="item-plan__top-part" style="display: grid !important; margin-top: -30px !important;">
+        <div
+          class="col-block item-plan"
+          data-aos="fade-up"
+          style="
+            border: #5b4f96 3px solid;
+            border-radius: 7px !important;
+            height: 600px !important;
+          "
+        >
+          <div class="item-plan__block" style="height: 100% !important">
+            <div
+              class="item-plan__top-part"
+              style="display: grid !important; margin-top: -30px !important"
+            >
               <h3 class="item-plan__title">Premium</h3>
               <p class="item-plan__price">$13.80</p>
               <p class="item-plan__price">€11.70</p>
@@ -647,15 +902,30 @@
               <p class="item-plan__per"></p>
             </div>
 
-            <div class="item-plan__bottom-part" style="height: 380px !important; margin-top: 5px !important;">
-              <div class="item-plan__features" style="display: grid !important;">
-                <p class="features-p"><span style="color: green;">✔</span> No Cool Down</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> Always Up</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> Other functionalities work</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of groups and contacts you can add</p>
-                <p class="features-p" style="margin-top: -20px !important;"><span style="color: green;">✔</span> No limits to the number of messages the app can have</p>
+            <div
+              class="item-plan__bottom-part"
+              style="height: 380px !important; margin-top: 5px !important"
+            >
+              <div class="item-plan__features" style="display: grid !important">
+                <p class="features-p">
+                  <span style="color: green">✔</span> No Cool Down
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> Always Up
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> Other functionalities work
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> No limits to the number of
+                  groups and contacts you can add
+                </p>
+                <p class="features-p" style="margin-top: -20px !important">
+                  <span style="color: green">✔</span> No limits to the number of
+                  messages the app can have
+                </p>
               </div>
-<!-- 
+              <!-- 
               <a class="btn btn--primary large full-width" href="#0"
                 >Get Started</a
               > -->
@@ -680,19 +950,18 @@
         <div class="col-full">
           <h1 class="display-1">Start Using The App Today</h1>
           <p class="lead">
-           And let JoNotify help you manage WhatsApp GroupChat messages.
+            And let JoNotify help you manage WhatsApp GroupChat messages.
           </p>
           <a
-                href="https://apkpure.com/p/com.example.second_application"
-                class="btn btn--primary home-content__btn smoothscroll"
-              >
-                Get The App
-              </a>
+            href="https://apkpure.com/p/com.example.second_application"
+            class="btn btn--primary home-content__btn smoothscroll"
+          >
+            Get The App
+          </a>
         </div>
       </div>
       <!-- end section-header -->
 
-      
       <!-- end footer__top -->
 
       <div class="row footer__bottom">
@@ -773,28 +1042,31 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <script>
-    const faqItems = document.querySelectorAll(".faq-item");
+   <script>
+  const faqItems = document.querySelectorAll(".faq-item");
 
-    faqItems.forEach(item => {
-      const question = item.querySelector(".faq-question");
-      const icon = question.querySelector(".icon");
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question, .faq-question-2");
+    if (!question) return;
 
-      question.addEventListener("click", () => {
-        const isActive = item.classList.contains("active");
+    const icon = question.querySelector(".icon");
 
-        faqItems.forEach(i => {
-          i.classList.remove("active");
-          i.querySelector(".icon").textContent = "+";
-        });
+    question.addEventListener("click", () => {
+      const isActive = item.classList.contains("active");
 
-        if (!isActive) {
-          item.classList.add("active");
-          icon.textContent = "−";
-        }
+      faqItems.forEach((i) => {
+        i.classList.remove("active");
+        const ic = i.querySelector(".icon");
+        if (ic) ic.textContent = "+";
       });
+
+      if (!isActive) {
+        item.classList.add("active");
+        if (icon) icon.textContent = "−";
+      }
     });
-  </script>
+  });
+</script>
 
   </body>
 </html>
